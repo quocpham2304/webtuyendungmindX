@@ -1,0 +1,1 @@
+export const pageType = {taoMoi:'tao-moi', capNhat:'cap-nhat', danhSach:'danh-sach', chiTiet: 'chi-tiet'} 

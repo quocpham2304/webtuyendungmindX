@@ -1,0 +1,33 @@
+.ant-btn {
+    background-color: #191970 !important;
+    border: 0px;
+    color: white !important;
+}
+
+.ant-table-thead .ant-table-cell{
+    background-color: #191970 !important;
+    color: white !important;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn{ 
+    color:white !important;
+}
+
+.ant-tabs-tab-active{
+    background-color: #191970 !important;
+}
+/* 
+.ant-tabs-nav{
+    border-bottom:rgba(0, 0, 0, 0.25) 1px solid 0% !important; 
+} */
+
+h1{
+    font-size: 25px !important;
+    color: #191970 !important;
+    margin-bottom:40px !important;
+    margin-top:10px !important
+}
+
+.table-yeu-cau-ung-tuyen .ant-form-item-explain,.table-yeu-cau-ung-tuyen .ant-table-content, .table-yeu-cau-ung-tuyen .ant-picker-input input{
+    font-size: 10px !important;
+}
