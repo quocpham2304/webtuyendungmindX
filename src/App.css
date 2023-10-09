@@ -178,6 +178,67 @@
 .menutab {
   padding: 5px;
 }
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  /* padding: 5px;
+  padding: 10px 20px; */
+  display: block;
+  /* margin: 100px auto 0; */
+  font-size: 18px;
+  height: 50px;
+  width: 150px;
+  align-items: center;
+  left: 75%;
+  z-index: 76;
+  position: absolute;
+  top: 5px;
+}
+.btn-modal :hover{
+  color: aqua;
+}
+.modal{
+  width: 100vw;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 170;
+}
+
+.overlay {
+  background: rgba(49,49,49,0.8);
+  width: 100vw;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 170;
+}
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 100px;
+  min-width: 800px;
+}
+
+.close-modal {
+  position: absolute;
+
+  padding: 5px 7px;
+}
 
 .breadcrumb-not-active {
   color: #cccccc;
@@ -202,4 +263,7 @@
   margin-bottom: 0px;
 }
 
-.cardvitri {}
+.cardvitri:hover {
+  border-color: blue;
+  cursor: pointer;
+}

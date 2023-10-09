@@ -52,7 +52,7 @@ const LandingPage = () => {
                                 className="Buttonchitiet"
                                 align="center">
                                 <HashLink
-                                    to='/#vi-tri-tuyen-dung'
+                                    to='/webtuyendungmindX/#vi-tri-tuyen-dung'
                                     scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}>
                                     Xem ngay
                                 </HashLink>

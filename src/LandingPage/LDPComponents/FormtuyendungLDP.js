@@ -35,7 +35,7 @@ const validateMessages = {
 };
 /* eslint-enable no-template-curly-in-string */
 
-const Formtuyendung = () => {
+const FormtuyendungLDP = () => {
     const { id } = useParams();
     const [thongTinViTri, setthongTinViTri] = useState();
     const [idDotTuyenDung, setIdDotTuyenDung] = useState()
@@ -89,7 +89,7 @@ const Formtuyendung = () => {
         console.log(idDotTuyenDung);
         const file = form.getFieldValue('file')
         const body = new FormData()
-        body.append('id_vi_tri', thongTinViTri._id)
+        // body.append('id_vi_tri', form.getFieldValue(thongTinViTri._id))
         body.append('id_dot_tuyen_dung', idDotTuyenDung)
         body.append('ho_va_ten', form.getFieldValue('ho_va_ten'))
         body.append('sdt', form.getFieldValue('sdt'))
@@ -133,9 +133,9 @@ const Formtuyendung = () => {
                 }}
                 validateMessages={validateMessages}
             >
-                <Form.Item name='ten_vi_tri' label='Tên vị trí' >
+                {/* <Form.Item name='ten_vi_tri' label='Tên vị trí' >
                     <Input name='ten_vi_tri' disabled={id} />
-                </Form.Item>
+                </Form.Item> */}
                 {/* <Form.Item name='id_vi_tri' label='Mã vị trí' >
                     <Input name='id' disabled={id} />
                 </Form.Item> */}
@@ -232,4 +232,4 @@ const Formtuyendung = () => {
         </>
     );
 };
-export default Formtuyendung;
+export default FormtuyendungLDP;
