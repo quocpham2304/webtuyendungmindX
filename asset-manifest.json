@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/webtuyendungmindX/static/css/main.dea097d3.css",
-    "main.js": "/webtuyendungmindX/static/js/main.d88fbfec.js",
+    "main.js": "/webtuyendungmindX/static/js/main.c2419ad3.js",
     "static/js/787.909e063d.chunk.js": "/webtuyendungmindX/static/js/787.909e063d.chunk.js",
     "static/media/CerebriSans-Regular.svg": "/webtuyendungmindX/static/media/CerebriSans-Regular.fb3a1fc1db59bba528ef.svg",
     "static/media/CerebriSans-Medium.svg": "/webtuyendungmindX/static/media/CerebriSans-Medium.a3015a2d9297c3536032.svg",
@@ -43,11 +43,11 @@
     "static/media/united-kingdom.svg": "/webtuyendungmindX/static/media/united-kingdom.4839cec4896b3141f334.svg",
     "index.html": "/webtuyendungmindX/index.html",
     "main.dea097d3.css.map": "/webtuyendungmindX/static/css/main.dea097d3.css.map",
-    "main.d88fbfec.js.map": "/webtuyendungmindX/static/js/main.d88fbfec.js.map",
+    "main.c2419ad3.js.map": "/webtuyendungmindX/static/js/main.c2419ad3.js.map",
     "787.909e063d.chunk.js.map": "/webtuyendungmindX/static/js/787.909e063d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dea097d3.css",
-    "static/js/main.d88fbfec.js"
+    "static/js/main.c2419ad3.js"
   ]
 }
