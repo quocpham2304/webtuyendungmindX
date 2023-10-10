@@ -118,7 +118,7 @@ const ChiTietDotTuyenDung = () => {
                         <Col span={12}>{chiTietDotTuyenDung.mo_ta_khac}</Col>
                     </Row>
                     <Row style={{ margin: "30px 0px" }}>
-                        <Button onClick={() => navigate(`/admin/dottuyendung/edit/${params.idDotTuyenDung}`)}>Chỉnh sửa đợt tuyển dụng</Button>
+                        <Button onClick={() => navigate(`/webtuyendungmindX/admin/dot-tuyen-dung/edit/${params.idDotTuyenDung}`)}>Chỉnh sửa đợt tuyển dụng</Button>
                     </Row>
                 </Col>
                 <Col span={9} offset={2}>
@@ -208,9 +208,9 @@ const ChiTietDotTuyenDung = () => {
         <>
             <Row>
                 <Breadcrumb>
-                    <Breadcrumb.Item><Link to={'/admin'} >Trang chủ</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item><Link to={'/admin/dottuyendung'} >Danh sách đợt tuyển dụng</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item><Link to={`/admin/dottuyendung/chitiet/${params.idDotTuyenDung}`} >Chi tiết đợt tuyển dụng</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={'/webtuyendungmindX/admin'} >Trang chủ</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={'/webtuyendungmindX/admin/dot-tuyen-dung'} >Danh sách đợt tuyển dụng</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={`/webtuyendungmindX/admin/dot-tuyen-dung/chitiet/${params.idDotTuyenDung}`} >Chi tiết đợt tuyển dụng</Link></Breadcrumb.Item>
                 </Breadcrumb>
             </Row>
             <Row>

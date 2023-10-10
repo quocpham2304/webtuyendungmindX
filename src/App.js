@@ -21,9 +21,9 @@ const App = () => {
         <Routes>
           <Route path="/webtuyendungmindX" element={<LandingPage />} />
           <Route path="/webtuyendungmindX/chittiet/:id?" element={<Tuyendungscreen />} />
-        <Route path="/login" element={<Login />} />
-          <Route path="/admin*" element={<Admin />} />
-          <Route path="/questions/:id" element={<TestQuestion />} />
+        <Route path="/webtuyendungmindX/admin/login" element={<Login />} />
+          <Route path="/webtuyendungmindX/admin/*" element={<Admin />} />
+          <Route path="/webtuyendungmindX/questions/:id" element={<TestQuestion />} />
       </Routes>
       </ThemeContextProvider>
     </BrowserRouter>

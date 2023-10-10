@@ -13,7 +13,6 @@ import {
 import logo from "../assets/images/logo.png";
 import logoa from "../assets/images/logo-a.png";
 import QLViTri from "./QLViTri/QLViTri";
-import DanhSachDotTuyenDung from "./QLDotTuyenDung/DanhSachDotTuyenDung";
 import TaoDotTuyenDung from "./QLDotTuyenDung/TaoDotTuyenDung";
 import ChiTietDotTuyenDung from "./QLDotTuyenDung/ChiTietDotTuyenDung";
 import EditDotTuyenDung from "./QLDotTuyenDung/EditDotTuyenDung";
@@ -23,6 +22,8 @@ import Login from "../Auth/Login";
 import ThemeContextProvider, { ThemeContext } from "./Context/ThemeContext";
 import QLBaitest from "./QLBaitest/QLbaitest";
 import Themmoibaitest from "./QLBaitest/ThemBaiTest";
+import DanhSachDotTuyenDung from "./QLDotTuyenDung/DanhSachDotTuyenDung";
+
 
 const { Header, Sider, Content } = Layout;
 
@@ -51,7 +52,7 @@ export default function Admin() {
     setUserName()
     sessionStorage.removeItem('isLogin')
     sessionStorage.removeItem('username')
-    navigate('/admin/login')
+    navigate('/webtuyendungmindX/admin/login')
   }
   
   const content = (
@@ -69,7 +70,7 @@ export default function Admin() {
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo" >
-          <Link to="/admin">
+          <Link to="/webtuyendungmindX/admin">
             <img src={collapsed ? logoa : logo} alt="" />
           </Link>
         </div>
@@ -80,16 +81,16 @@ export default function Admin() {
           onClick={(e) => setSelectedMenuItem(e.key)}
         >
           <Menu.Item key="item1" icon={<AppstoreOutlined />}>
-            <Link to="quan-li-vi-tri">Quản lý vị trí </Link>
+            <Link to="/webtuyendungmindX/admin/quan-li-vi-tri">Quản lý vị trí </Link>
           </Menu.Item>
           <Menu.Item key="item2" icon={<DatabaseOutlined />}>
-            <Link to="dottuyendung">Quản lý tuyển dụng</Link>
+            <Link to="/webtuyendungmindX/admin/dot-tuyen-dung">Quản lý tuyển dụng</Link>
           </Menu.Item>
           <Menu.Item key="item3" icon={<VideoCameraOutlined />}>
-            <Link to="quan-li-bai-test">Quản lý bài test</Link>
+            <Link to="/webtuyendungmindX/admin/quan-li-bai-test">Quản lý bài test</Link>
           </Menu.Item>
           <Menu.Item key="item4" icon={<UserOutlined />}>
-            <Link to="ungvien">Quản lý ứng viên</Link>
+            <Link to="/webtuyendungmindX/admin/ung-vien">Quản lý ứng viên</Link>
           </Menu.Item>
         </Menu>
       </Sider>
@@ -134,16 +135,16 @@ export default function Admin() {
         >
           {!isLogin ? <Login /> :
             (<Routes>
-              <Route path="quan-li-vi-tri" element={<QLViTri />} />
-              <Route path="login" element={<Login />} />
-              <Route path="dottuyendung/create" element={<TaoDotTuyenDung />} />
-              <Route path="dottuyendung/chitiet/:idDotTuyenDung" element={<ChiTietDotTuyenDung />} />
-              <Route path="dottuyendung/edit/:idDotTuyenDung" element={<EditDotTuyenDung  />} />
-              <Route path="dottuyendung" element={<DanhSachDotTuyenDung />} />
-              <Route path="ungvien" element={<DanhSachUngVien />} />
-              <Route path="test" element={<Test />} />
-              <Route path="quan-li-bai-test" element={<QLBaitest />} />
-            <Route path="quan-li-bai-test/:pageType/:id?" element={<Themmoibaitest />} />
+              <Route path="/webtuyendungmindX/admin/quan-li-vi-tri" element={<QLViTri />} />
+              <Route path="/webtuyendungmindX/admin/login" element={<Login />} />
+              <Route path="/webtuyendungmindX/admin/dot-tuyen-dung/create" element={<TaoDotTuyenDung />} />
+              <Route path="/webtuyendungmindX/admin/dot-tuyen-dung/chitiet/:idDotTuyenDung" element={<ChiTietDotTuyenDung />} />
+              <Route path="/webtuyendungmindX/admin/dot-tuyen-dung/edit/:idDotTuyenDung" element={<EditDotTuyenDung  />} />
+              <Route path="/webtuyendungmindX/admin/dot-tuyen-dung" element={<DanhSachDotTuyenDung/>} />
+              <Route path="/webtuyendungmindX/admin/ung-vien" element={<DanhSachUngVien />} />
+              <Route path="/webtuyendungmindX/admin/test" element={<Test />} />
+              <Route path="/webtuyendungmindX/admin/quan-li-bai-test" element={<QLBaitest />} />
+            <Route path="/webtuyendungmindX/admin/quan-li-bai-test/:pageType/:id?" element={<Themmoibaitest />} />
           </Routes>)}
         </Content>
       </Layout>

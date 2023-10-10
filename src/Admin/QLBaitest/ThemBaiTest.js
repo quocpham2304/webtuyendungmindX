@@ -64,7 +64,7 @@ const Themmoibaitest = () => {
                 notification.success({
                     message: 'Thêm bài test thành công',
                 })
-                Navigate('/admin/quan-li-bai-test')
+                Navigate('/webtuyendungmindX/admin/quan-li-bai-test')
             })
             .catch((error) =>{
                 notification.destroy()
@@ -91,7 +91,7 @@ const Themmoibaitest = () => {
                 notification.success({
                     message: 'Cập nhật bài test thành công',
                 })
-                Navigate('/admin/quan-li-bai-test')
+                Navigate('/webtuyendungmindX/admin/quan-li-bai-test')
             })
             .catch((error) =>{
                 notification.destroy()

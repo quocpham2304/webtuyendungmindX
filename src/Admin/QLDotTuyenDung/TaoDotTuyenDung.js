@@ -47,7 +47,7 @@ const TaoDotTuyenDung = () => {
             return
         }
         if (result.data.status == "true") {
-            navigate("/admin/dottuyendung")
+            navigate("/webtuyendungmindX/admin/dot-tuyen-dung")
         } else {
             console.log(result.data);
             message.error(result.data.message);
@@ -77,9 +77,9 @@ const TaoDotTuyenDung = () => {
         <>
             <Row>
                 <Breadcrumb>
-                    <Breadcrumb.Item><Link to={'/admin'} >Trang chủ</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item><Link to={'/admin/dottuyendung'} >Danh sách đợt tuyển dụng</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item><Link to={'/admin/dottuyendung/create'} >Tạo đợt tuyển dụng</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={'/webtuyendungmindX/admin'} >Trang chủ</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={'/webtuyendungmindX/admin/dot-tuyen-dung'} >Danh sách đợt tuyển dụng</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={'/webtuyendungmindX/admin/dot-tuyen-dung/create'} >Tạo đợt tuyển dụng</Link></Breadcrumb.Item>
                 </Breadcrumb>
             </Row>
             <Row>

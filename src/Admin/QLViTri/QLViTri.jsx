@@ -83,8 +83,8 @@ export default function QLViTri() {
     <>
       <Row>
         <Breadcrumb>
-          <Breadcrumb.Item><Link to={'/admin/dottuyendung'} >Trang chủ</Link></Breadcrumb.Item>
-          <Breadcrumb.Item><Link to={'/admin/quan-li-vi-tri'} >Danh sách vị trí</Link></Breadcrumb.Item>
+          <Breadcrumb.Item><Link to={'/webtuyendungmindX/admin/dot-tuyen-dung'} >Trang chủ</Link></Breadcrumb.Item>
+          <Breadcrumb.Item><Link to={'/webtuyendungmindX/admin/quan-li-vi-tri'} >Danh sách vị trí</Link></Breadcrumb.Item>
         </Breadcrumb>
       </Row>
       <Row>

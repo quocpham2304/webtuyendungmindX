@@ -267,3 +267,31 @@ body.active-modal {
   border-color: blue;
   cursor: pointer;
 }
+@media (max-width:900px){
+  .layout{
+    grid-template-areas: 
+    "header header header"
+    "content content content"
+    "content content content"
+    "footer footer footer";
+  }
+  /* .site-layout-content{
+    min-height: 200px;
+    max-width: 900px ;
+  } */
+  .imgheaderchitiet {
+    height: auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0);
+    left: auto;
+    align-items: center;
+    display: block;
+    z-index: 169;
+    position: absolute;
+  }
+  .titlechitiet {
+    left: auto;
+    z-index: 76;
+    position: absolute;
+  }
+}

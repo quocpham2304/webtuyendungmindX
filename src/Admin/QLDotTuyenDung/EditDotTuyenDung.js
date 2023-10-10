@@ -60,7 +60,7 @@ const EditDotTuyenDung = () => {
             return
         }
         if (result.data.status == "true") {
-            navigate(`/admin/dottuyendung/chitiet/${params.idDotTuyenDung}`)
+            navigate(`/webtuyendungmindX/admin/dot-tuyen-dung/chitiet/${params.idDotTuyenDung}`)
         } else {
             console.log(result.data);
             message.error(result.data.message);
@@ -121,10 +121,10 @@ const EditDotTuyenDung = () => {
         <>
             <Row>
                 <Breadcrumb>
-                    <Breadcrumb.Item><Link to={'/admin'} >Trang chủ</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item><Link to={'/admin/dottuyendung'} >Danh sách đợt tuyển dụng</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item><Link to={`/admin/dottuyendung/chitiet/${params.idDotTuyenDung}`} >Chi tiết đợt tuyển dụng</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item><Link to={`/admin/dottuyendung/edit/${params.idDotTuyenDung}`} >Chỉnh sửa đợt tuyển dụng</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={'/webtuyendungmindX/admin'} >Trang chủ</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={'/webtuyendungmindX/admin/dot-tuyen-dung'} >Danh sách đợt tuyển dụng</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={`/webtuyendungmindX/admin/dot-tuyen-dung/chitiet/${params.idDotTuyenDung}`} >Chi tiết đợt tuyển dụng</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item><Link to={`/webtuyendungmindX/admin/dot-tuyen-dung/edit/${params.idDotTuyenDung}`} >Chỉnh sửa đợt tuyển dụng</Link></Breadcrumb.Item>
                 </Breadcrumb>
             </Row>
             <Row>
