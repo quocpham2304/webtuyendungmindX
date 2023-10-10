@@ -136,16 +136,16 @@ export default function Admin() {
         >
           {!isLogin ? <Login /> :
             (<Routes>
-              <Route path="/webtuyendungmindX/admin/quan-li-vi-tri" element={<QLViTri />} />
-              <Route path="/webtuyendungmindX/admin/login" element={<Login />} />
-              <Route path="/webtuyendungmindX/admin/dot-tuyen-dung/create" element={<TaoDotTuyenDung />} />
-              <Route path="/webtuyendungmindX/admin/dot-tuyen-dung/chitiet/:idDotTuyenDung" element={<ChiTietDotTuyenDung />} />
-              <Route path="/webtuyendungmindX/admin/dot-tuyen-dung/edit/:idDotTuyenDung" element={<EditDotTuyenDung  />} />
-              <Route path="/webtuyendungmindX/admin/dot-tuyen-dung" element={<DanhSachDotTuyenDung/>} />
-              <Route path="/webtuyendungmindX/admin/ung-vien" element={<DanhSachUngVien />} />
-              <Route path="/webtuyendungmindX/admin/test" element={<Test />} />
-              <Route path="/webtuyendungmindX/admin/quan-li-bai-test" element={<QLBaitest />} />
-            <Route path="/webtuyendungmindX/admin/quan-li-bai-test/:pageType/:id?" element={<Themmoibaitest />} />
+              <Route path="/quan-li-vi-tri" element={<QLViTri />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/dot-tuyen-dung/create" element={<TaoDotTuyenDung />} />
+              <Route path="/dot-tuyen-dung/chitiet/:idDotTuyenDung" element={<ChiTietDotTuyenDung />} />
+              <Route path="/dot-tuyen-dung/edit/:idDotTuyenDung" element={<EditDotTuyenDung  />} />
+              <Route path="/dot-tuyen-dung" element={<DanhSachDotTuyenDung/>} />
+              <Route path="/ung-vien" element={<DanhSachUngVien />} />
+              <Route path="/test" element={<Test />} />
+              <Route path="/quan-li-bai-test" element={<QLBaitest />} />
+            <Route path="/quan-li-bai-test/:pageType/:id?" element={<Themmoibaitest />} />
           </Routes>)}
         </Content>
       </Layout>
