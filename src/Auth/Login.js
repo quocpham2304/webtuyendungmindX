@@ -28,7 +28,7 @@ const Login = () => {
           sessionStorage.setItem('isLogin',true)
           setUserName(result.data.data.cbnv.username)
           sessionStorage.setItem('username',result.data.data.cbnv.username)
-          navigate('/webtuyendungmindX/admin/dot-tuyen-dung')       
+          navigate('/webtuyendungmindX/admin/quan-li-vi-tri')       
         }
       } catch (error) {
         console.log(error.response.data.message);
