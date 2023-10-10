@@ -71,7 +71,7 @@ export default function Admin() {
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo" >
-          <Link to="/webtuyendungmindX/admin">
+          <Link to="/webtuyendungmindX/admin/dot-tuyen-dung">
             <img src={collapsed ? logoa : logo} alt="" />
           </Link>
         </div>
